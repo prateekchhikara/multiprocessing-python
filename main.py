@@ -45,7 +45,7 @@ class Main:
             gpu_model_list (list): the list of GPU models that we want to inference on
 
         Returns:
-            [type]: [description]
+            dict: result of the inference
         """
         # running CPU models
         process1 = Process(target=self.CPU_module, args=(data, cpu_model_list))
